@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'oswald': ['Oswald', 'sans-serif'],
+				'sans': ['Open Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				'barbershop': {
+					'black': '#000000',
+					'gray': '#C8C4BF',
+					'gold': '#D4AF37',
+					'white': '#FFFFFF',
+					'dark-gray': '#2C2C2C',
+					'light-gray': '#F5F5F5'
 				}
 			},
 			borderRadius: {
