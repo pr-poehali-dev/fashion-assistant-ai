@@ -204,21 +204,21 @@ const Profile = ({ onBack }: ProfileProps) => {
 
         {/* Bottom Navigation */}
         <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-sm">
-          <div className="bg-black/60 backdrop-blur-lg border-t border-white/10 px-6 py-4">
+          <div className="bg-style-dark/80 backdrop-blur-lg border-t border-style-gray/20 px-6 py-4">
             <div className="flex justify-around">
-              <Button variant="ghost" size="sm" className="flex-col text-gray-400" onClick={onBack}>
+              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray" onClick={onBack}>
                 <Icon name="Home" size={20} />
                 <span className="text-xs mt-1">Главная</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-gray-400">
+              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
                 <Icon name="Search" size={20} />
                 <span className="text-xs mt-1">Поиск</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-gray-400">
+              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
                 <Icon name="Heart" size={20} />
                 <span className="text-xs mt-1">Избранное</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-white">
+              <Button variant="ghost" size="sm" className="flex-col text-style-text">
                 <Icon name="User" size={20} />
                 <span className="text-xs mt-1">Профиль</span>
               </Button>

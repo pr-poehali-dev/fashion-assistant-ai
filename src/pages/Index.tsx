@@ -130,19 +130,19 @@ const Index = () => {
         {/* AI Recommendations */}
         <div className="px-6 mb-6">
           <h2 className="text-style-text font-semibold mb-4">Рекомендации AI</h2>
-          <Card className="bg-gradient-to-r from-style-accent/20 to-style-accent-muted/20 border-style-accent/40">
+          <Card className="bg-stone-200 border-stone-300">
             <CardContent className="p-4">
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-style-accent to-style-accent-muted rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Sparkles" size={16} className="text-style-text" />
+                <div className="w-8 h-8 bg-style-accent rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Sparkles" size={16} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-style-text font-medium mb-1">Улучши свой образ</h3>
-                  <p className="text-style-text-muted text-sm leading-relaxed">
+                  <h3 className="text-gray-800 font-medium mb-1">Улучши свой образ</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     Попробуй добавить темно-синий пиджак к твоей белой рубашке. 
                     Это поднимет твой рейтинг на 0.5 балла!
                   </p>
-                  <Button size="sm" className="mt-3 bg-style-accent/20 hover:bg-style-accent/30 text-style-accent">
+                  <Button size="sm" className="mt-3 bg-style-accent hover:bg-style-accent/90 text-white">
                     Посмотреть
                   </Button>
                 </div>
@@ -163,9 +163,14 @@ const Index = () => {
                 <Icon name="Search" size={20} />
                 <span className="text-xs mt-1">Поиск</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
-                <Icon name="Heart" size={20} />
-                <span className="text-xs mt-1">Избранное</span>
+              <Button variant="ghost" size="sm" className="flex-col relative">
+                <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-style-accent rounded-full flex items-center justify-center">
+                  <span className="text-xs text-white font-medium">3</span>
+                </div>
+                <div className="text-style-accent">
+                  <Icon name="Heart" size={20} />
+                  <span className="text-xs mt-1 block">Избранное</span>
+                </div>
               </Button>
               <Button 
                 variant="ghost" 
