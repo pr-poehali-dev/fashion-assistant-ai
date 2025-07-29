@@ -155,15 +155,15 @@ const Index = () => {
         <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-sm">
           <div className="bg-style-dark/80 backdrop-blur-lg border-t border-style-gray/20 px-6 py-4">
             <div className="flex justify-around">
-              <Button variant="ghost" size="sm" className="flex-col text-style-text">
+              <Button variant="ghost" className="flex-col text-style-text px-4 py-3 h-auto min-h-[60px] hover:bg-style-gray/30">
                 <Icon name="Home" size={20} />
                 <span className="text-xs mt-1">Главная</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
+              <Button variant="ghost" className="flex-col text-style-light-gray px-4 py-3 h-auto min-h-[60px] hover:bg-style-accent/20 hover:text-style-accent">
                 <Icon name="Search" size={20} />
                 <span className="text-xs mt-1">Поиск</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col relative">
+              <Button variant="ghost" className="flex-col relative px-4 py-3 h-auto min-h-[60px] hover:bg-style-accent/20">
                 <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-style-accent rounded-full flex items-center justify-center">
                   <span className="text-xs text-white font-medium">3</span>
                 </div>
@@ -174,8 +174,7 @@ const Index = () => {
               </Button>
               <Button 
                 variant="ghost" 
-                size="sm" 
-                className="flex-col text-style-light-gray"
+                className="flex-col text-style-light-gray px-4 py-3 h-auto min-h-[60px] hover:bg-style-gray/30"
                 onClick={() => setCurrentScreen('profile')}
               >
                 <Icon name="User" size={20} />

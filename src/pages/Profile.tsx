@@ -206,19 +206,19 @@ const Profile = ({ onBack }: ProfileProps) => {
         <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-sm">
           <div className="bg-style-dark/80 backdrop-blur-lg border-t border-style-gray/20 px-6 py-4">
             <div className="flex justify-around">
-              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray" onClick={onBack}>
+              <Button variant="ghost" className="flex-col text-style-light-gray px-4 py-3 h-auto min-h-[60px] hover:bg-style-gray/30" onClick={onBack}>
                 <Icon name="Home" size={20} />
                 <span className="text-xs mt-1">Главная</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
+              <Button variant="ghost" className="flex-col text-style-light-gray px-4 py-3 h-auto min-h-[60px] hover:bg-style-accent/20 hover:text-style-accent">
                 <Icon name="Search" size={20} />
                 <span className="text-xs mt-1">Поиск</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
+              <Button variant="ghost" className="flex-col text-style-light-gray px-4 py-3 h-auto min-h-[60px] hover:bg-style-accent/20 hover:text-style-accent">
                 <Icon name="Heart" size={20} />
                 <span className="text-xs mt-1">Избранное</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-style-text">
+              <Button variant="ghost" className="flex-col text-style-text px-4 py-3 h-auto min-h-[60px] hover:bg-style-gray/30">
                 <Icon name="User" size={20} />
                 <span className="text-xs mt-1">Профиль</span>
               </Button>
