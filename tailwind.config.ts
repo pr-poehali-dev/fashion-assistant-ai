@@ -73,6 +73,16 @@ export default {
 					'white': '#FFFFFF',
 					'dark-gray': '#2C2C2C',
 					'light-gray': '#F5F5F5'
+				},
+				'style': {
+					'black': '#0A0A0A',
+					'dark': '#1A1A1A',
+					'gray': '#2A2A2A',
+					'light-gray': '#666666',
+					'accent': '#B8860B',
+					'accent-muted': '#8B7355',
+					'text': '#E5E5E5',
+					'text-muted': '#A0A0A0'
 				}
 			},
 			borderRadius: {

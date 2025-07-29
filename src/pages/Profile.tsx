@@ -12,9 +12,9 @@ interface ProfileProps {
 
 const Profile = ({ onBack }: ProfileProps) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-style-black via-style-dark to-style-black">
       {/* Mobile App Container */}
-      <div className="max-w-sm mx-auto bg-black/40 backdrop-blur-lg min-h-screen">
+      <div className="max-w-sm mx-auto bg-style-dark/80 backdrop-blur-lg min-h-screen">
         
         {/* Header */}
         <div className="flex items-center justify-between p-6 pt-12">
@@ -22,15 +22,15 @@ const Profile = ({ onBack }: ProfileProps) => {
             variant="ghost"
             size="icon"
             onClick={onBack}
-            className="text-white hover:bg-white/10"
+            className="text-style-text hover:bg-style-gray/30"
           >
             <Icon name="ArrowLeft" size={24} />
           </Button>
-          <h1 className="text-xl font-bold text-white">Профиль</h1>
+          <h1 className="text-xl font-bold text-style-text">Профиль</h1>
           <Button
             variant="ghost"
             size="icon"
-            className="text-white hover:bg-white/10"
+            className="text-style-text hover:bg-style-gray/30"
           >
             <Icon name="Settings" size={24} />
           </Button>
@@ -42,26 +42,26 @@ const Profile = ({ onBack }: ProfileProps) => {
             <AvatarImage src="/img/a0f52a81-1b4c-4ab4-8eb2-6c77b2b36810.jpg" />
             <AvatarFallback className="text-2xl">АМ</AvatarFallback>
           </Avatar>
-          <h2 className="text-2xl font-bold text-white mb-1">Алексей Морозов</h2>
-          <p className="text-gray-400 mb-3">Стилист-новичок</p>
-          <Badge variant="secondary" className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+          <h2 className="text-2xl font-bold text-style-text mb-1">Алексей Морозов</h2>
+          <p className="text-style-text-muted mb-3">Стилист-новичок</p>
+          <Badge variant="secondary" className="bg-style-accent/20 text-style-accent border-style-accent/30">
             Пользователь с июня 2024
           </Badge>
         </div>
 
         {/* Overall Style Score */}
         <div className="px-6 mb-6">
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+          <Card className="bg-style-gray/20 backdrop-blur-sm border-style-gray/40">
             <CardHeader className="text-center pb-3">
-              <CardTitle className="text-white text-xl">Общая оценка стиля</CardTitle>
-              <div className="text-6xl font-bold text-white my-4">8.5</div>
-              <Badge variant="secondary" className="bg-green-500/20 text-green-400 border-green-500/30 text-lg px-4 py-1">
+              <CardTitle className="text-style-text text-xl">Общая оценка стиля</CardTitle>
+              <div className="text-6xl font-bold text-style-text my-4">8.5</div>
+              <Badge variant="secondary" className="bg-style-accent/20 text-style-accent border-style-accent/30 text-lg px-4 py-1">
                 Отличный уровень
               </Badge>
             </CardHeader>
             <CardContent>
               <Progress value={85} className="h-3 mb-4" />
-              <div className="flex justify-between text-sm text-gray-400">
+              <div className="flex justify-between text-sm text-style-text-muted">
                 <span>Начинающий</span>
                 <span>Эксперт</span>
               </div>
@@ -71,18 +71,18 @@ const Profile = ({ onBack }: ProfileProps) => {
 
         {/* Style Categories */}
         <div className="px-6 mb-6">
-          <h3 className="text-white font-semibold mb-4">Категории стиля</h3>
+          <h3 className="text-style-text font-semibold mb-4">Категории стиля</h3>
           <div className="space-y-4">
-            <Card className="bg-white/5 border-white/20">
+            <Card className="bg-style-gray/20 border-style-gray/40">
               <CardContent className="p-4">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                      <Icon name="Briefcase" size={18} className="text-white" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-style-accent to-style-accent-muted rounded-full flex items-center justify-center">
+                      <Icon name="Briefcase" size={18} className="text-style-text" />
                     </div>
-                    <span className="text-white font-medium">Деловой стиль</span>
+                    <span className="text-style-text font-medium">Деловой стиль</span>
                   </div>
-                  <span className="text-green-400 font-bold">9.2</span>
+                  <span className="text-style-accent font-bold">9.2</span>
                 </div>
                 <Progress value={92} className="h-2" />
               </CardContent>

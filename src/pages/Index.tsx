@@ -15,21 +15,21 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-style-black via-style-dark to-style-black">
       {/* Mobile App Container */}
-      <div className="max-w-sm mx-auto bg-black/40 backdrop-blur-lg min-h-screen">
+      <div className="max-w-sm mx-auto bg-style-dark/80 backdrop-blur-lg min-h-screen">
         
         {/* Header */}
         <div className="flex items-center justify-between p-6 pt-12">
           <div>
-            <h1 className="text-2xl font-bold text-white">StyleAI</h1>
-            <p className="text-gray-400 text-sm">Твой персональный стилист</p>
+            <h1 className="text-2xl font-bold text-style-text">StyleAI</h1>
+            <p className="text-style-text-muted text-sm">Твой персональный стилист</p>
           </div>
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setCurrentScreen('profile')}
-            className="text-white hover:bg-white/10"
+            className="text-style-text hover:bg-style-gray/30"
           >
             <Avatar className="h-8 w-8">
               <AvatarImage src="/img/a0f52a81-1b4c-4ab4-8eb2-6c77b2b36810.jpg" />
@@ -40,18 +40,18 @@ const Index = () => {
 
         {/* Style Score Card */}
         <div className="px-6 mb-6">
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+          <Card className="bg-style-gray/20 backdrop-blur-sm border-style-gray/40">
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <div>
-                  <CardTitle className="text-white text-lg">Оценка стиля</CardTitle>
-                  <CardDescription className="text-gray-300">
+                  <CardTitle className="text-style-text text-lg">Оценка стиля</CardTitle>
+                  <CardDescription className="text-style-text-muted">
                     Твой общий рейтинг
                   </CardDescription>
                 </div>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-white">8.5</div>
-                  <Badge variant="secondary" className="bg-green-500/20 text-green-400 border-green-500/30">
+                  <div className="text-3xl font-bold text-style-text">8.5</div>
+                  <Badge variant="secondary" className="bg-style-accent/20 text-style-accent border-style-accent/30">
                     Отлично
                   </Badge>
                 </div>
@@ -59,7 +59,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <Progress value={85} className="h-2" />
-              <p className="text-xs text-gray-400 mt-2">
+              <p className="text-xs text-style-text-muted mt-2">
                 +0.3 с прошлой недели
               </p>
             </CardContent>
@@ -68,18 +68,18 @@ const Index = () => {
 
         {/* Quick Actions */}
         <div className="px-6 mb-6">
-          <h2 className="text-white font-semibold mb-4">Быстрые действия</h2>
+          <h2 className="text-style-text font-semibold mb-4">Быстрые действия</h2>
           <div className="grid grid-cols-2 gap-3">
             <Button 
               variant="outline" 
-              className="h-20 flex-col bg-white/5 border-white/20 hover:bg-white/10 text-white"
+              className="h-20 flex-col bg-style-gray/20 border-style-gray/40 hover:bg-style-gray/30 text-style-text"
             >
               <Icon name="Camera" size={24} className="mb-2" />
               <span className="text-sm">Оценить образ</span>
             </Button>
             <Button 
               variant="outline" 
-              className="h-20 flex-col bg-white/5 border-white/20 hover:bg-white/10 text-white"
+              className="h-20 flex-col bg-style-gray/20 border-style-gray/40 hover:bg-style-gray/30 text-style-text"
             >
               <Icon name="Lightbulb" size={24} className="mb-2" />
               <span className="text-sm">Совет дня</span>
@@ -89,36 +89,36 @@ const Index = () => {
 
         {/* Recent Outfits */}
         <div className="px-6 mb-6">
-          <h2 className="text-white font-semibold mb-4">Последние образы</h2>
+          <h2 className="text-style-text font-semibold mb-4">Последние образы</h2>
           <div className="space-y-3">
             <Card className="bg-white/5 border-white/20">
               <CardContent className="p-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <Icon name="Shirt" size={20} className="text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-style-accent-muted to-style-accent rounded-lg flex items-center justify-center">
+                    <Icon name="Shirt" size={20} className="text-style-text" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-white font-medium">Деловой стиль</h3>
-                    <p className="text-gray-400 text-sm">Сегодня, 09:30</p>
+                    <h3 className="text-style-text font-medium">Деловой стиль</h3>
+                    <p className="text-style-text-muted text-sm">Сегодня, 09:30</p>
                   </div>
-                  <Badge variant="secondary" className="bg-green-500/20 text-green-400">
+                  <Badge variant="secondary" className="bg-style-accent/20 text-style-accent">
                     9.2
                   </Badge>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-white/5 border-white/20">
+            <Card className="bg-style-gray/20 border-style-gray/40">
               <CardContent className="p-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
-                    <Icon name="Coffee" size={20} className="text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-style-accent-muted to-style-accent rounded-lg flex items-center justify-center">
+                    <Icon name="Coffee" size={20} className="text-style-text" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-white font-medium">Casual встреча</h3>
-                    <p className="text-gray-400 text-sm">Вчера, 15:45</p>
+                    <h3 className="text-style-text font-medium">Casual встреча</h3>
+                    <p className="text-style-text-muted text-sm">Вчера, 15:45</p>
                   </div>
-                  <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-400">
+                  <Badge variant="secondary" className="bg-style-accent-muted/30 text-style-accent">
                     7.8
                   </Badge>
                 </div>
@@ -129,20 +129,20 @@ const Index = () => {
 
         {/* AI Recommendations */}
         <div className="px-6 mb-6">
-          <h2 className="text-white font-semibold mb-4">Рекомендации AI</h2>
-          <Card className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-500/30">
+          <h2 className="text-style-text font-semibold mb-4">Рекомендации AI</h2>
+          <Card className="bg-gradient-to-r from-style-accent/20 to-style-accent-muted/20 border-style-accent/40">
             <CardContent className="p-4">
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Sparkles" size={16} className="text-white" />
+                <div className="w-8 h-8 bg-gradient-to-br from-style-accent to-style-accent-muted rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Sparkles" size={16} className="text-style-text" />
                 </div>
                 <div>
-                  <h3 className="text-white font-medium mb-1">Улучши свой образ</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <h3 className="text-style-text font-medium mb-1">Улучши свой образ</h3>
+                  <p className="text-style-text-muted text-sm leading-relaxed">
                     Попробуй добавить темно-синий пиджак к твоей белой рубашке. 
                     Это поднимет твой рейтинг на 0.5 балла!
                   </p>
-                  <Button size="sm" className="mt-3 bg-white/20 hover:bg-white/30 text-white">
+                  <Button size="sm" className="mt-3 bg-style-accent/20 hover:bg-style-accent/30 text-style-accent">
                     Посмотреть
                   </Button>
                 </div>
@@ -153,24 +153,24 @@ const Index = () => {
 
         {/* Bottom Navigation */}
         <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-sm">
-          <div className="bg-black/60 backdrop-blur-lg border-t border-white/10 px-6 py-4">
+          <div className="bg-style-dark/80 backdrop-blur-lg border-t border-style-gray/20 px-6 py-4">
             <div className="flex justify-around">
-              <Button variant="ghost" size="sm" className="flex-col text-white">
+              <Button variant="ghost" size="sm" className="flex-col text-style-text">
                 <Icon name="Home" size={20} />
                 <span className="text-xs mt-1">Главная</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-gray-400">
+              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
                 <Icon name="Search" size={20} />
                 <span className="text-xs mt-1">Поиск</span>
               </Button>
-              <Button variant="ghost" size="sm" className="flex-col text-gray-400">
+              <Button variant="ghost" size="sm" className="flex-col text-style-light-gray">
                 <Icon name="Heart" size={20} />
                 <span className="text-xs mt-1">Избранное</span>
               </Button>
               <Button 
                 variant="ghost" 
                 size="sm" 
-                className="flex-col text-gray-400"
+                className="flex-col text-style-light-gray"
                 onClick={() => setCurrentScreen('profile')}
               >
                 <Icon name="User" size={20} />
